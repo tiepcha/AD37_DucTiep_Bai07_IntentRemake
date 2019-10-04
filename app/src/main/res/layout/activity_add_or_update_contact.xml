@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddOrUpdateContact">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlstt"
+        android:background="@drawable/xamvienden"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/tvstt"
+            android:text="ADD/UPDATE Contact"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvsave"
+            android:text="Save/Update"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/trangvienden"
+            android:padding="5dp"/>
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvname"
+        android:layout_below="@id/rlstt"
+        android:text="Name"
+        android:layout_margin="20dp"
+        android:textSize="15dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtname"
+        android:layout_below="@id/tvname"
+        android:background="@drawable/trangvienden"
+        android:hint="Name"
+        android:layout_marginHorizontal="20dp"
+        android:padding="5dp"/>
+
+</RelativeLayout>
